@@ -17,7 +17,7 @@ namespace WpfApp1
         // OxyPlot のモデルとコントローラー
         PlotModel plotModel { get; } = new PlotModel();
         LineSeries lineSeries { get; } = new LineSeries();
-        bool canelFrag = false;
+        bool cancelFlag = false;
         public MainWindow()
         {
             InitializeComponent();
@@ -59,7 +59,7 @@ namespace WpfApp1
         {
             //描画されているグラフをクリア
             lineSeries.Points.Clear();
-            canelFrag = false;
+            cancelFlag = false;
             DrawButton.IsEnabled = false;
             SaveButton.IsEnabled = false;
             StopButton.IsEnabled = true;
@@ -72,7 +72,7 @@ namespace WpfApp1
 
         void Stop_Button(object sender, RoutedEventArgs e)
         {
-            canelFrag = true;
+            cancelFlag = true;
             StopButton.IsEnabled = false;
             SaveButton.IsEnabled = true;
             DrawButton.IsEnabled = true;
@@ -103,7 +103,7 @@ namespace WpfApp1
             int deg = 0;
             while (true)
             {
-                if (canelFrag)
+                if (cancelFlag)
                 {
                     tokenSource.Cancel();
                     return;

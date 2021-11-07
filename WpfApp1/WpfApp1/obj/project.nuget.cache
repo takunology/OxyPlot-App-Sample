@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/DDVv8ojHEZBtwjroKnUTbCFQ8UJyzflJq9YRaZbQH0C2VvsT11z6dBvrl46ZfAVhBLftT7XZ2dNo8qlVRHxTw==",
+  "dgSpecHash": "pbbFd8HFQ4+qD3yE8jTNpWUU9pCk+06v1Fz3LmpdftPGlyhX3BSWtm3FIvQIO/CsNyw4LTgTc6yDXrnFM0DatQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\takun\\Desktop\\WpfApp1\\WpfApp1\\WpfApp1.csproj",
+  "projectFilePath": "D:\\GitHub\\OxyPlot-App-Sanple\\WpfApp1\\WpfApp1\\WpfApp1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\takun\\.nuget\\packages\\oxyplot.core\\2.1.0\\oxyplot.core.2.1.0.nupkg.sha512",
     "C:\\Users\\takun\\.nuget\\packages\\oxyplot.wpf\\2.1.0\\oxyplot.wpf.2.1.0.nupkg.sha512",
