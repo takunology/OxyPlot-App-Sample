@@ -1,0 +1,24 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        xmlns:oxy="http://oxyplot.org/wpf"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="500">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="9*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Vertical">
+            <StackPanel Orientation="Horizontal">
+                <Button x:Name="DrawButton" Margin="5" Content="描画開始" Width="100" Click="Draw_Button"/>
+                <Button x:Name="StopButton" Margin="5" Content="描画停止" Width="100" Click="Stop_Button"/>
+                <Button x:Name="SaveButton" Margin="5" Content="グラフの保存" IsEnabled="false" Width="100" Click="Save_Button"/>
+            </StackPanel>
+        </StackPanel>
+        <oxy:PlotView x:Name="PlotView" Grid.Row="1"/>
+    </Grid>
+</Window>
